@@ -7,3 +7,5 @@ dist/
 build/
 *.egg-info/
 .env
+todo.db
+*.db
