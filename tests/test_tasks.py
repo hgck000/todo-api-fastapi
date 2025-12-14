@@ -17,7 +17,6 @@ def test_create_task(client):
 
 
 def test_list_tasks_filter_and_pagination(client):
-    # create 3 tasks: 2 done=false, 1 done=true
     t1 = client.post("/tasks", json={"title": "t1", "done": False}).json()
     t2 = client.post("/tasks", json={"title": "t2", "done": True}).json()
     t3 = client.post("/tasks", json={"title": "t3", "done": False}).json()
